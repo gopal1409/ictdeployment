@@ -35,7 +35,7 @@ spec:
               value: "webappdb"
             - name: DB_USERNAME
               value: "root"
-            - name: MYSQL_ROOT_PASSWORD
+            - name: DB_PASSWORD
               value: dbpassword11
           ports:
             - containerPort: 3306 #this will be expose internally inside your k8s cluster
