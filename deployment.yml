@@ -21,4 +21,4 @@ spec:
         - name: myapp3-container
           image: stacksimplify/kubenginx:1.0.0
           ports:
-            - containerPort: 80
+            - containerPort: 80 #this will be expose internally inside your k8s cluster
