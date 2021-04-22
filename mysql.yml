@@ -35,5 +35,5 @@ spec:
           persistentVolumeClaim:
             claimName: task-pv-claim
         - name: usermanagement-dbcreation-script
-            configMap:
+          configMap:
               name: usermanagement-dbcreation-script
