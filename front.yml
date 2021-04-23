@@ -36,7 +36,10 @@ spec:
             - name: DB_USERNAME
               value: "root"
             - name: DB_PASSWORD
-              value: dbpassword11
+              valueFrom:
+                secretKeyRef:
+                  name: my-sql-db-password
+                  key: db-password
           ports:
             - containerPort: 3306 #this will be expose internally inside your k8s cluster
           volumeMounts:
